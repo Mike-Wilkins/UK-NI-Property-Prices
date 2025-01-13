@@ -13,6 +13,9 @@
 ## Business Requirements
 
 ## Data Source
+- https://www.kaggle.com/datasets/fabianwhitaker/uk-regional-property-data
+- The data source for this project is provided by Kaggle and represents regional property sales data in the UK and NI across various attributes between 1995 and 2023.
+- Orignal data is taken from the UK Government House Price Index (HPI).
 
 ## Objectives
 
