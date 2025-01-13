@@ -61,6 +61,11 @@ FROM dbo.[UK-HPI-full-file-2022-08]
 ```
 **2. Create new column RegionType:**
 
+``` SQL
+ALTER TABLE UK_NI_Regional_Property_Prices
+ADD RegionType varchar(100);
+```
+
 ## Power Bi Visualisation
 
 
