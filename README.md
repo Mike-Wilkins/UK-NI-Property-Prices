@@ -43,7 +43,7 @@ The cleaned data should meet the following criteria and constraints:
 - A new RegionType column should be added to the dataset.
 - All data types should be appropriate for the contents of each column.
 
-**1. Create a nodified records dataset including only relevant columns:**
+**1. Create a modified records dataset including only relevant columns:**
 
 ``` SQL
 SELECT 
@@ -59,6 +59,7 @@ INTO
 	UK_NI_Regional_Property_Prices
 FROM dbo.[UK-HPI-full-file-2022-08]
 ```
+**2. Create new column RegionType:**
 
 ## Power Bi Visualisation
 
