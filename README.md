@@ -28,7 +28,10 @@ Our client has requested a dashboard detailing residential property sales over t
 - Test the data with SQL
 - Visualise the data in Power BI
 - Generate the findings based on the insights
+- 
 ## Data Exploration Notes
+- We have more data than we need, so some of these columns would need to be removed.
+- The table contains a column RegionName which lists the region name regardless of whether it is a country, county, borough, town or city. A new column RegionType will need to be created to categorise this data in accordance with the client's requirements.
 
 ## Data Cleaning
 
