@@ -15,6 +15,7 @@ Our client has requested a dashboard detailing residential property sales over t
 - We would like to see a visualisation of the property trend prices across numerous years and have the ability to dynamically focus in on selected time periods.
 - The visualisation should provide a means of filtering trends in data by categorizing the regions by Country, County, City, Borough and Town.
 - We would like to see a breakdown of the property types (Detached, Semi-detached, Terraced and Flats) for each selected time period/region.
+- The dashboard should clearly show the percentage property price increase between each time period.
 
 ## Data Source
 - https://www.kaggle.com/datasets/fabianwhitaker/uk-regional-property-data
@@ -28,12 +29,36 @@ Our client has requested a dashboard detailing residential property sales over t
 - Test the data with SQL
 - Visualise the data in Power BI
 - Generate the findings based on the insights
-- 
+  
 ## Data Exploration Notes
 - We have more data than we need, so some of these columns would need to be removed.
 - The table contains a column RegionName which lists the region name regardless of whether it is a country, county, borough, town or city. A new column RegionType will need to be created to categorise this data in accordance with the client's requirements.
+- We will need to implement a dynamic percentage increase calculation as part of the dashboard using a DAX measure.
 
 ## Data Cleaning
+The aim is to refine our dataset to ensure it is structured and ready for analysis.
+
+The cleaned data should meet the following criteria and constraints:
+- A new table needs to be created including only relevant columns required for the dashboard.
+- A new RegionType column should be added to the dataset.
+- All data types should be appropriate for the contents of each column.
+
+**1. Create a nodified records dataset including only relevant columns:**
+
+``` SQL
+SELECT 
+	[Date],
+	RegionName,
+	AveragePrice,
+	SalesVolume,
+	DetachedPrice,
+	SemiDetachedPrice,
+	TerracedPrice,
+	FlatPrice
+INTO 
+	UK_NI_Regional_Property_Prices
+FROM dbo.[UK-HPI-full-file-2022-08]
+```
 
 ## Power Bi Visualisation
 
