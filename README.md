@@ -22,8 +22,8 @@ Our client has requested a dashboard detailing residential property sales over t
 - Orignal data is taken from the UK Government House Price Index (HPI).
 
 ## Objectives
+- Load the CSV file into SQL Server (SSMS)
 - Explore the data provided by the UK Government House Price Index (HPI)
-- Load the data into SQL Server (SSMS)
 - Clean the data with SQL
 - Test the data with SQL
 - Visualise the data in Power BI
