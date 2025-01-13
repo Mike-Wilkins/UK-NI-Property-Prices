@@ -65,6 +65,21 @@ FROM dbo.[UK-HPI-full-file-2022-08]
 ALTER TABLE UK_NI_Regional_Property_Prices
 ADD RegionType varchar(100);
 ```
+**3. Populate RegionType column with row category:**
+
+``` SQL
+UPDATE Regional_Property_Prices
+SET RegionType = 'City'
+WHERE 
+	RegionName = 'Bath' OR
+	RegionName = 'Birmingham' OR
+	RegionName = 'Bradford' OR
+	RegionName = 'Brighton & Hove' OR
+	RegionName = 'Bristol' OR
+	RegionName = 'Cambridge' OR
+
+-- Add additional RegionName here
+```
 
 ## Power Bi Visualisation
 
