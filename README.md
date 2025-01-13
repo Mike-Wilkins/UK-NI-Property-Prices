@@ -1,5 +1,15 @@
 # UK-NI-Property-Prices
 
+## Table of Contents
+* [Business Requirements](#business-requirements)
+* [Data Source](#data-source)
+* [Objectives](#objectives)
+* [Data Exploration Notes](#data-exploration-notes)
+* [Data Cleaning](#data-cleaning)
+* [Test the Dataset](#test-the-dataset)
+* [Power BI Visualisation](#power-bi-visualisation)
+* [Analysis](#analysis)
+
 ## Business Requirements
 
 ## Data Source
