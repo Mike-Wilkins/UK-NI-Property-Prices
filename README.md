@@ -106,7 +106,39 @@ WHERE
 | RegionType	    | nvarchar    |
 
 **Check and update the new dataset for NULL values**
+Many of the values for property type are missing. We need to identfy these NULL values and replace them with an appropriate estimate.
+The following shows an example where Basildon was showing a NULL entry in the DetachedPrice column on 2007-01-04:
 
+``` SQL
+SELECT DISTINCT RegionName FROM Regional_Property_Prices
+WHERE 
+	(DetachedPrice IS NULL OR 
+	SemiDetachedPrice IS NULL OR
+	TerracedPrice IS NULL OR
+	FlatPrice IS NULL)
+	AND
+	RegionType = 'Town'
+	
+
+SELECT * FROM Regional_Property_Prices
+WHERE RegionName = 'Basildon'
+
+BEGIN TRAN
+UPDATE Regional_Property_Prices
+SET DetachedPrice = 374390.93827
+WHERE 
+	RegionName = 'Basildon' AND
+	[Date] = '2007-01-04'
+	
+
+SELECT * FROM Regional_Property_Prices
+WHERE 
+	RegionName = 'Basildon' AND
+	[Date] = '2007-01-04'
+	
+ROLLBACK TRAN
+
+```
 
 ## Power Bi Visualisation
 
