@@ -81,6 +81,28 @@ WHERE
 -- Add additional RegionName here
 ```
 ## Test the dataset
+**1. All columns within the new dataset should have approproate data types.**
+
+``` SQL
+SELECT 
+	COLUMN_NAME,
+	DATA_TYPE
+FROM 
+	INFORMATION_SCHEMA.COLUMNS
+WHERE 
+	TABLE_NAME = 'Regional_Property_Prices'
+```
+
+COLUMN_NAME	DATA_TYPE
+Date	date
+RegionName	nvarchar
+AveragePrice	float
+SalesVolume	float
+DetachedPrice	float
+SemiDetachedPrice	float
+TerracedPrice	float
+FlatPrice	float
+RegionType	nvarchar
 
 ## Power Bi Visualisation
 
