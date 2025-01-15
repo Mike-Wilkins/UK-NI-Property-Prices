@@ -105,7 +105,7 @@ WHERE
 | FlatPrice	    | float       |
 | RegionType	    | nvarchar    |
 
-**Check and update the new dataset for NULL values**
+**5. Check and update the new dataset for NULL values**
 
 Many of the values for property type are missing. We need to identfy these NULL values and replace them with an appropriate estimate.
 The following shows an example where Basildon was showing a NULL entry in the DetachedPrice column on 2007-01-04:
