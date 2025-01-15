@@ -93,7 +93,8 @@ WHERE
 	TABLE_NAME = 'Regional_Property_Prices'
 ```
 
-|COLUMN_NAME|	DATA_TYPE|
+| COLUMN_NAME |	DATA_TYPE |
+
 Date	date
 RegionName	nvarchar
 AveragePrice	float
