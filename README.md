@@ -92,19 +92,19 @@ FROM
 WHERE 
 	TABLE_NAME = 'Regional_Property_Prices'
 ```
+**Output:**
 
-| COLUMN_NAME |	DATA_TYPE |
-|-------------|-----------|
-| Date	      | date      |
-
-RegionName	nvarchar
-AveragePrice	float
-SalesVolume	float
-DetachedPrice	float
-SemiDetachedPrice	float
-TerracedPrice	float
-FlatPrice	float
-RegionType	nvarchar
+| COLUMN_NAME       | DATA_TYPE   |
+|-------------------|-------------|
+| Date	            | date        |
+| RegionName        | nvarchar    |
+| AveragePrice	    | float       |
+| SalesVolume	    | float       |
+| DetachedPrice	    | float       |
+| SemiDetachedPrice | float       |
+| TerracedPrice	    | float       |
+| FlatPrice	    | float       |
+| RegionType	    | nvarchar    |
 
 ## Power Bi Visualisation
 
