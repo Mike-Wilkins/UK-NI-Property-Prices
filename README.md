@@ -94,8 +94,9 @@ WHERE
 ```
 
 | COLUMN_NAME |	DATA_TYPE |
+|-------------|-----------|
+| Date	      | date      |
 
-Date	date
 RegionName	nvarchar
 AveragePrice	float
 SalesVolume	float
