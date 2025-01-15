@@ -8,7 +8,6 @@
 * [Data Cleaning](#data-cleaning)
 * [Test the Dataset](#test-the-dataset)
 * [Power BI Visualisation](#power-bi-visualisation)
-* [Analysis](#analysis)
 
 ## Business Requirements
 Our client has requested a dashboard detailing residential property sales over the last 20+ years. The dashboard should address the following:
@@ -149,4 +148,3 @@ https://github.com/user-attachments/assets/c16b03d7-9549-4285-9840-7d93abe753be
 
 
 
-## Analysis
