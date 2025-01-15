@@ -80,8 +80,7 @@ WHERE
 
 -- Add additional RegionName here
 ```
-## Test the dataset
-**1. All columns within the new dataset should have approproate data types.**
+**4. All columns within the new dataset should have approproate data types.**
 
 ``` SQL
 SELECT 
@@ -105,6 +104,9 @@ WHERE
 | TerracedPrice	    | float       |
 | FlatPrice	    | float       |
 | RegionType	    | nvarchar    |
+
+**Check and update the new dataset for NULL values**
+
 
 ## Power Bi Visualisation
 
